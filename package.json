@@ -1,0 +1,21 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "Sample",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "utils.js",
+  "scripts": {
+    "start": "node utils.js",
+    "dev": "nodemon file.js",
+    "build": "if not exist dist mkdir dist && tar -a -c -f project.zip --exclude node_modules"
+  },
+  "dependencies": {
+    "build": "^0.1.4",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
