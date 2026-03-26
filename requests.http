@@ -1,0 +1,8 @@
+### Get a new JWT token
+GET http://localhost:3000/auth/token
+
+### Access Protected Route (requires token)
+# Replace 'YOUR_TOKEN_HERE' with the token returned from the request above
+GET http://localhost:3000/protected
+Authorization: Bearer YOUR_TOKEN_HERE
+

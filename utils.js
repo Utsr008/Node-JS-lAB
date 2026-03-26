@@ -1,2 +1,4 @@
-import add from "./file.js";
-console.log(add(2, 3));
+const add=(a,b)=>a+b;
+const multi=(a,b)=>a*b;
+
+module.exports={add,multi};
