@@ -1,0 +1,16 @@
+<h1>welcome to <%= universityName%></h1>
+<h2>CSE Department</h2>
+
+<ol>
+    <% data.students.forEach(student=>{%>
+        <li>
+            <%=student.name%>
+            <%=student.age%>
+            <%=student.cgpa%>
+        </li>
+    <%})%>
+</ol>
+
+<%- include("header",header) %>
+<%- include("footer",footer) %>
+<%- include("content",content) %>
