@@ -1,6 +1,11 @@
 const express=require('express');
+const mdb = require("./models/db");
+const userController = require("./controllers/userController");
+mdb();
+
 const app=express();
 
+app.use(express.json());
 app.set("view engine","ejs");
 
 const homePageContent={
@@ -29,6 +34,11 @@ app.get("/footer",(req,res)=>{
 app.get("/content",(req,res)=>{
     res.render("content",homePageContent.content);
 });
+
+// ─── User Routes ───────────────────────────────────────────
+app.get("/users", userController.getUsers);
+app.post("/users", userController.createUser);
+
 
 
 

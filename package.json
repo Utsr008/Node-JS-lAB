@@ -15,10 +15,10 @@
     "build": "^0.1.4",
     "ejs": "^5.0.1",
     "express": "^5.2.1",
-    "jsonwebtoken": "^9.0.3"
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.4.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.11"
   }
 }
- 

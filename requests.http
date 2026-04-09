@@ -6,3 +6,22 @@ GET http://localhost:3000/auth/token
 GET http://localhost:3000/protected
 Authorization: Bearer YOUR_TOKEN_HERE
 
+
+### Get all users
+GET http://localhost:3000/users
+
+###  Create a new user
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "_id": 1,
+  "name": "Utkarsh",
+  "age": 21,
+  "course": "B.Tech",
+  "skills": ["Node.js", "MongoDB"],
+  "address": { "city": "Mathura", "pincode": 281001 },
+  "isActive": true,
+  "status": "active",
+  "verified": true
+}
